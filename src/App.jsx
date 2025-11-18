@@ -1,17 +1,20 @@
-import { useState } from "react";
-import Count from "./Components/Count";
 
+import Countdown from './Components/Countdown';
+import Count from './Components/Count'
+import { useState } from "react";
 function App() {
   const [count, setCount] = useState(0);
-
   return (
-    <div>
-      <h1>Felles teller</h1>
+    <>
+     <h1>Alternativ 1</h1>
+     <h2>Tellere</h2>
       <Count count={count} setCount={setCount} />
       <Count count={count} setCount={setCount} />
       <Count count={count} setCount={setCount} />
-    </div>
-  );
+      <hr></hr>
+      <h1>Alternativ 2</h1>
+      <Countdown></Countdown>
+    </>
+  )
 }
-
-export default App;
+export default App
