@@ -18,6 +18,7 @@ function App() {
       <hr></hr>
       <h1>Measure converter oppgave</h1>
       <MeasureConverter></MeasureConverter>
+      <hr></hr>
     </>
   )
 }
